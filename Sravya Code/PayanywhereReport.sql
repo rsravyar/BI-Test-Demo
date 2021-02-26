@@ -76,7 +76,7 @@ WHERE gttrdt>=20151001
 AND s01st 
 IN ('TX') 
 AND c.end_date ='9999-12-31 00:00:00' AND gtcmp 
-IN ('C51', 'C52', 'C55','AI3', 'AI4', 'AI5') 
+IN ('C51', 'C52', 'C55','AI3', 'AI4', 'AI5','AI6') 
 AND tender_type 
 IN ('CASH', 'DEBIT', 'ACH') 
 AND TRIM(SOURCE) 
