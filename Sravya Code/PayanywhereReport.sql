@@ -76,7 +76,7 @@ WHERE gttrdt>=20151001
 AND s01st 
 IN ('TX') 
 AND c.end_date ='9999-12-31 00:00:00' AND gtcmp 
-IN ('C51', 'C52', 'C55') 
+IN ('C51', 'C52', 'C55','AI3', 'AI4', 'AI5') 
 AND tender_type 
 IN ('CASH', 'DEBIT', 'ACH') 
 AND TRIM(SOURCE) 
@@ -163,9 +163,9 @@ LEFT JOIN acedw..loan_application_dim d ON gtgln_nbr=d.loan_nbr
 AND d.end_date='9999-12-31 00:00:00' LEFT JOIN acedw..loan_customer_type cu ON customer_type_code = loan_customer_type_code 
 WHERE gttrdt>=20151001 
 AND s01st 
-IN ('FL','KS','CA','IN','TN') 
+IN ('FL','KS','CA','IN','TN','VA') 
 AND c.end_date ='9999-12-31 00:00:00' AND gtcmp 
-IN ('ACE') 
+IN ('ACE','AI3', 'AI4', 'AI5') 
 AND tender_type 
 IN ('CASH', 'DEBIT', 'ACH') 
 AND TRIM(SOURCE) 
@@ -206,7 +206,7 @@ WHERE gttrdt>=20151001
 AND s01st 
 IN ('FL','KS','CA','IN','TN') 
 AND c.end_date ='9999-12-31 00:00:00' AND gtcmp 
-IN ('ACE') 
+IN ('ACE','AI3', 'AI4', 'AI5') 
 AND tender_type 
 IN ('CASH', 'DEBIT', 'ACH') 
 AND TRIM(SOURCE) 
